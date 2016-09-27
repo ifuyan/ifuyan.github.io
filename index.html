@@ -268,8 +268,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/09/19/这是第一篇文章/" itemprop="url">
-                  这是第一篇文章
+                <a class="post-title-link" href="/2016/09/19/==和equals的区别/" itemprop="url">
+                  ==和equals的区别
                 </a>
               
             
@@ -296,8 +296,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -312,8 +312,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/19/这是第一篇文章/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/19/这是第一篇文章/" itemprop="commentsCount"></span>
+                <a href="/2016/09/19/==和equals的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/19/==和equals的区别/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -323,7 +323,7 @@
 
           
           
-             <span id="/2016/09/19/这是第一篇文章/" class="leancloud_visitors" data-flag-title="这是第一篇文章">
+             <span id="/2016/09/19/==和equals的区别/" class="leancloud_visitors" data-flag-title="==和equals的区别">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -346,9 +346,11 @@
 
       
         
-          <p>前面介绍了怎么用hexo搭建博客，今天就谢谢主题的配置和优化。<br>因为对hexo默认的主题不是很满意，对于追逐个性的我当然不甘于此，于是开启了折腾之路。<br>对于hexo主题的选择纯凭个人喜好，这一点前面我也有提到，具体可以参考我的博文-Hexo系列教程之零。我现在的主题是yilia，已经配置好了，为了写这篇文章，我准备尝试一下next主题。<br>
+          <h2 id="先来说说-和equals的区别"><a href="#先来说说-和equals的区别" class="headerlink" title="先来说说==和equals的区别"></a>先来说说==和equals的区别</h2><h3 id="1-java中的数据类型，可分为两类："><a href="#1-java中的数据类型，可分为两类：" class="headerlink" title="1.java中的数据类型，可分为两类："></a>1.java中的数据类型，可分为两类：</h3><ol>
+<li>基本数据类型，也称原始数据类型。<br><strong>byte,short,char,int,long,float,double,boolean</strong> 。他们之间的比较，应用双等号（==）,比较的是他们的值。 </li>
+<li>复合数据类型(类)<br>当他们用（==）进行比较的时候，比较的是他们在内存中的存放地址，所以，除非是同一个<strong>new</strong>出来的对象，他们的比较后的结果为<strong>true</strong>，否则比较后结果为<strong>false</strong>。<font color=#ff0000> JAVA当中所有的类都是继承于<strong>Object</strong>这个基类的，在<strong>Object</strong>中的基类中定义了一个<strong>equals</strong>的方法，这个方法的初始行为是比较对象的内存地 址，但在一些类库当中这个方法被覆盖掉了，如<strong>String</strong>,<strong>Integer</strong>,<strong>Date</strong>在这些类当中<strong>equals</strong>有其自身的实现，而不再是比较类在堆内存中的存放地址了。</font><br>对于复合数据类型之间进行<strong>equals</strong>比较，在没有覆写<strong>equals</strong>方法的情况下，他们之间的比较还是基于他们在内存中的存放位置的地址值的，因为<strong>Object</strong>的<strong>equals</strong>方法也是用双等号（==）进行比较的，所以比较后的结果跟双等号（==）的结果相同。
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/19/这是第一篇文章/#more" rel="contents">
+            <a class="btn" href="/2016/09/19/==和equals的区别/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -826,7 +828,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -835,7 +837,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
