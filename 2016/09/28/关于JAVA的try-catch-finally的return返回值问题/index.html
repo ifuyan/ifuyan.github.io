@@ -84,22 +84,37 @@
 
 
 
-<meta name="description" content="先来说说==和equals的区别1.java中的数据类型，可分为两类：
-基本数据类型，也称原始数据类型。byte,short,char,int,long,float,double,boolean 。他们之间的比较，应用双等号（==）,比较的是他们的值。 
-复合数据类型(类)当他们用（==）进行比较的时候，比较的是他们在内存中的存放地址，所以，除非是同一个new出来的对象，他们的比较后的结果为tru">
+<meta name="description" content="先来看看如下代码：
+class TestExcception {
+    public int test(){
+        int x = 1;
+        try{
+            throw new Exception();
+        }catch(Exception e){
+            System.out.println(&quot;x1=&quot; + x);">
 <meta property="og:type" content="article">
-<meta property="og:title" content="==和equals的区别">
-<meta property="og:url" content="http://yoursite.com/2016/09/19/==和equals的区别/index.html">
+<meta property="og:title" content="关于JAVA的try catch finally的return返回值问题">
+<meta property="og:url" content="http://yoursite.com/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/index.html">
 <meta property="og:site_name" content="浮言">
-<meta property="og:description" content="先来说说==和equals的区别1.java中的数据类型，可分为两类：
-基本数据类型，也称原始数据类型。byte,short,char,int,long,float,double,boolean 。他们之间的比较，应用双等号（==）,比较的是他们的值。 
-复合数据类型(类)当他们用（==）进行比较的时候，比较的是他们在内存中的存放地址，所以，除非是同一个new出来的对象，他们的比较后的结果为tru">
-<meta property="og:updated_time" content="2016-09-27T17:30:38.544Z">
+<meta property="og:description" content="先来看看如下代码：
+class TestExcception {
+    public int test(){
+        int x = 1;
+        try{
+            throw new Exception();
+        }catch(Exception e){
+            System.out.println(&quot;x1=&quot; + x);">
+<meta property="og:updated_time" content="2016-09-28T07:38:43.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="==和equals的区别">
-<meta name="twitter:description" content="先来说说==和equals的区别1.java中的数据类型，可分为两类：
-基本数据类型，也称原始数据类型。byte,short,char,int,long,float,double,boolean 。他们之间的比较，应用双等号（==）,比较的是他们的值。 
-复合数据类型(类)当他们用（==）进行比较的时候，比较的是他们在内存中的存放地址，所以，除非是同一个new出来的对象，他们的比较后的结果为tru">
+<meta name="twitter:title" content="关于JAVA的try catch finally的return返回值问题">
+<meta name="twitter:description" content="先来看看如下代码：
+class TestExcception {
+    public int test(){
+        int x = 1;
+        try{
+            throw new Exception();
+        }catch(Exception e){
+            System.out.println(&quot;x1=&quot; + x);">
 
 
 
@@ -120,9 +135,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/19/==和equals的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/"/>
 
-  <title> ==和equals的区别 | 浮言 </title>
+  <title> 关于JAVA的try catch finally的return返回值问题 | 浮言 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +287,7 @@
             
             
               
-                ==和equals的区别
+                关于JAVA的try catch finally的return返回值问题
               
             
           </h1>
@@ -284,8 +299,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-19T12:41:08+08:00" content="2016-09-19">
-              2016-09-19
+            <time itemprop="dateCreated" datetime="2016-09-28T15:08:13+08:00" content="2016-09-28">
+              2016-09-28
             </time>
           </span>
 
@@ -314,8 +329,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/19/==和equals的区别/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/19/==和equals的区别/" itemprop="commentsCount"></span>
+                <a href="/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/28/关于JAVA的try-catch-finally的return返回值问题/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -325,7 +340,7 @@
 
           
           
-             <span id="/2016/09/19/==和equals的区别/" class="leancloud_visitors" data-flag-title="==和equals的区别">
+             <span id="/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/" class="leancloud_visitors" data-flag-title="关于JAVA的try catch finally的return返回值问题">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -352,69 +367,47 @@
       
 
       
-        <h2 id="先来说说-和equals的区别"><a href="#先来说说-和equals的区别" class="headerlink" title="先来说说==和equals的区别"></a>先来说说==和equals的区别</h2><h3 id="1-java中的数据类型，可分为两类："><a href="#1-java中的数据类型，可分为两类：" class="headerlink" title="1.java中的数据类型，可分为两类："></a>1.java中的数据类型，可分为两类：</h3><ol>
-<li>基本数据类型，也称原始数据类型。<br><strong>byte,short,char,int,long,float,double,boolean</strong> 。他们之间的比较，应用双等号（==）,比较的是他们的值。 </li>
-<li>复合数据类型(类)<br>当他们用（==）进行比较的时候，比较的是他们在内存中的存放地址，所以，除非是同一个<strong>new</strong>出来的对象，他们的比较后的结果为<strong>true</strong>，否则比较后结果为<strong>false</strong>。<font color="#ff0000"> JAVA当中所有的类都是继承于<strong>Object</strong>这个基类的，在<strong>Object</strong>中的基类中定义了一个<strong>equals</strong>的方法，这个方法的初始行为是比较对象的内存地 址，但在一些类库当中这个方法被覆盖掉了，如<strong>String</strong>,<strong>Integer</strong>,<strong>Date</strong>在这些类当中<strong>equals</strong>有其自身的实现，而不再是比较类在堆内存中的存放地址了。</font><br>对于复合数据类型之间进行<strong>equals</strong>比较，在没有覆写<strong>equals</strong>方法的情况下，他们之间的比较还是基于他们在内存中的存放位置的地址值的，因为<strong>Object</strong>的<strong>equals</strong>方法也是用双等号（==）进行比较的，所以比较后的结果跟双等号（==）的结果相同。<a id="more"></a>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">public class TestString &#123;</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		String s1 = <span class="string">"Monday"</span>;</div><div class="line">		String s2 = <span class="string">"Monday"</span>;</div><div class="line">		<span class="keyword">if</span> (s1 == s2)</div><div class="line">		&#123;</div><div class="line">			System.out.println(<span class="string">"s1 == s2"</span>);</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			System.out.println(<span class="string">"s1 != s2"</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>先来看看如下代码：</p>
+<pre><code class="bash">class TestExcception {
+    public int <span class="function"><span class="title">test</span></span>(){
+        int x = 1;
+        try{
+            throw new Exception();
+        }catch(Exception e){
+            System.out.println(<span class="string">"x1="</span> + x);
+            <span class="built_in">return</span> x++;
+        }finally{
+            System.out.println(<span class="string">"x2="</span> + x);
+            ++x;
+            System.out.println(<span class="string">"x3="</span> + x);
+        }
+    }
+    public static void main(String[] args){
+        TestExcception t = new TestExcception();
+        int y = t.test();
+        System.out.println(<span class="string">"y :"</span>+y);
+    }
+}
+</code></pre>
+<a id="more"></a>
+<p>程序输出结果为：<br><strong>x1=1</strong><br><strong>x2=2</strong><br><strong>x3=3</strong><br><strong>y =1</strong></p>
+<p><strong>debug</strong>一下程序执行的顺序得知在<strong>t.test()</strong>的方法里<strong>try</strong>获取了异常后执行<strong>catch</strong> <strong>x1=1</strong>;然后并没有立即执行<strong>return</strong>而是先去执行<strong>finally</strong>里面的代码 <strong>x2=2</strong>, <strong>x3=3</strong>;<strong>finally</strong>走完了再回去执行<strong>catch</strong>的<strong>return</strong>方法，但是这样<strong>return</strong>出去的不就是<strong>x3=3</strong>，所以<strong>y=3</strong>啊，但是最后的结果却是<strong>y=1</strong>。</p>
+<h2 id="通过查阅资料后明白了这个疑问："><a href="#通过查阅资料后明白了这个疑问：" class="headerlink" title="通过查阅资料后明白了这个疑问："></a>通过查阅资料后明白了这个疑问：</h2><ol>
+<li><strong>finally中没有return的时候：</strong><br> 会先执行try里面的，return会执行但是没有真正的return，此时去执行了finally里面的语句，然后再返回来执行return，所以如上题x1:1，然后return x++;这时候它会返回1出去，但是finally是无论如何都会执行的，所以它并不是立刻返回，而是先执行finally里的语句，然后得到 x3:3，但是，重点是：因为finally中没有return ，所以finally中对x的改变都不会影响之前return的值，因为之前return出去的是1；所以即使后面的finally重新改变的x的值，然后再次执行return，但是依旧返回之前的1。就是说return 出去的时候是几就是几，除非finally重新return才会改变</li>
+<li><strong>finally中有return的时候：</strong><br> 会先执行try里面的，return会执行但是没有真正的return此时去执行了finally里面的，然后执行finally里面的return，直接返回。</li>
+</ol>
+<h2 id="所以使用try、catch、finally语句块中需要注意的是"><a href="#所以使用try、catch、finally语句块中需要注意的是" class="headerlink" title="所以使用try、catch、finally语句块中需要注意的是"></a>所以使用try、catch、finally语句块中需要注意的是</h2><ol>
+<li><p>尽量在try或者catch中使用return语句。通过finally块中达到对try或者catch返回值修改是不可行的。</p>
+</li>
+<li><p>finally块中避免使用return语句，因为finally块中如果使用return语句，会显示的消化掉try、catch块中的异常信息，屏蔽了错误的发生</p>
+</li>
+<li><p>finally块中避免再次抛出异常，否则整个包含try语句块的方法回抛出异常，并且会消化掉try、catch块中的异常</p>
 </li>
 </ol>
-<p>编译并运行程序，输出：<strong>s1 == s2</strong> 说明：<strong>s1</strong> 与 <strong>s2</strong> 引用同一个 <em>String</em> 对象 – <strong>“Monday”</strong>!</p>
-<h3 id="2-再稍微改动一下程序，会有更奇怪的发现："><a href="#2-再稍微改动一下程序，会有更奇怪的发现：" class="headerlink" title="2.再稍微改动一下程序，会有更奇怪的发现："></a>2.再稍微改动一下程序，会有更奇怪的发现：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">public class TestString &#123;</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		String s1 = <span class="string">"Monday"</span>;</div><div class="line">		String s2 = new String(<span class="string">"Monday"</span>);</div><div class="line">		<span class="keyword">if</span> (s1 == s2)</div><div class="line">		&#123;</div><div class="line">			System.out.println(<span class="string">"s1 == s2"</span>);</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			System.out.println(<span class="string">"s1 != s2"</span>);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">if</span> (s1.equals(s2)) &#123;</div><div class="line">			System.out.println(<span class="string">"s1 equals s2"</span>);</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			System.out.println(<span class="string">"s1 not equals s2"</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>我们将<strong>s2</strong>用<strong>new</strong>操作符创建<br>程序输出：<br><strong>s1 != s2</strong><br><strong>s1 equals s2</strong><br>说明：<strong>s1</strong> <strong>s2</strong>分别引用了两个<strong>“Monday”</strong> <em>String</em>对象</p>
-<h3 id="3-字符串缓冲池"><a href="#3-字符串缓冲池" class="headerlink" title="3. 字符串缓冲池"></a>3. 字符串缓冲池</h3><p>原来，程序在运行的时候会创建一个字符串缓冲池当使用 <strong>s2 = “Monday”</strong> 这样的表达是创建字符串的时候，程序首先会在这个<em>String</em>缓冲池中寻找相同值的对象，在第一个程序中，<strong>s1</strong>先被放到了池中，所以在<strong>s2</strong>被创建的时候，程序找到了具有相同值的 <strong>s1</strong><br>将<strong>s2</strong>引用<strong>s1</strong>所引用的对象<strong>“Monday”</strong><br>第二段程序中，使用了 <em>new</em> 操作符，他明白的告诉程序：”我要一个新的！不要旧的！”于是一个新的<strong>“Monday”</strong> <em>Sting</em>对象被创建在内存中。他们的值相同，但是位置不同，一个在池中游泳一个在岸边休息。哎呀，真是资源浪费，明明是一样的非要分开做什么呢？</p>
-<h3 id="4-再次更改程序："><a href="#4-再次更改程序：" class="headerlink" title="4.再次更改程序："></a>4.再次更改程序：</h3><pre><code class="bash">public class TestString {
-    public static void main(String[] args) {
-        String s1 = <span class="string">"Monday"</span>;
-        String s2 = new String(<span class="string">"Monday"</span>);
-        s2 = s2.intern();
-        <span class="keyword">if</span> (s1 == s2)
-        {
-            System.out.println(<span class="string">"s1 == s2"</span>);
-        }<span class="keyword">else</span>{
-            System.out.println(<span class="string">"s1 != s2"</span>);
-        }<span class="keyword">if</span> (s1.equals(s2)) {
-            System.out.println(<span class="string">"s1 equals s2"</span>);
-        }<span class="keyword">else</span>{
-            System.out.println(<span class="string">"s1 not equals s2"</span>);
-        }
-    }
-}
-</code></pre>
-<p>这次加入：<strong>s2 = s2.intern();</strong><br>程序输出：<br><strong>s1 == s2</strong><br><strong>s1 equals s2</strong><br>原 来，（<em>java.lang.String</em>的<strong>intern()</strong>方法<strong>“abc”.intern()</strong>方法的返回值还是字符串<strong>“abc”</strong>，表面上看起来好像这个方 法没什么用处。但实际上，它做了个小动作：检查字符串池里是否存在<strong>“abc”</strong>这么一个字符串，如果存在，就返回池里的字符串；如果不存在，该方法会 把<strong>“abc”</strong>添加到字符串池中，然后再返回它的引用。</p>
-<h3 id="5-特殊情况："><a href="#5-特殊情况：" class="headerlink" title="5.特殊情况："></a>5.特殊情况：</h3><pre><code class="bash">Integer a=100; 
-Integer b=100; 
-System.out.println(a==b); 
-System.out.println(a.equals(b));
-
-Integer c=200; 
-Integer d=200; 
-System.out.println(c==d); 
-System.out.println(c.equals(d));
-</code></pre>
-<p>程序输出:<br><strong>true</strong><br><strong>true</strong><br><strong>false</strong><br><strong>true</strong><br>所以在 127 以下的整数是相等的，用 == 和 <strong>equals</strong> 都是<strong>true</strong><br>而在 128 以上就作为不同对象处理了。== 的结果就为<strong>false</strong>了。<br>所以一般比较基本数据类型就用 == 比较，比较对象就用 <strong>equals</strong> 比较。</p>
-<h3 id="6-贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的"><a href="#6-贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的" class="headerlink" title="6.贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的"></a>6.贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的</h3><pre><code class="bash">public boolean equals(Object anObject) {
-    <span class="keyword">if</span> (this == anObject) {
-        <span class="built_in">return</span> <span class="literal">true</span>;
-    }
-    <span class="keyword">if</span> (anObject instanceof String) {
-        String anotherString = (String) anObject;
-        int n = value.length;
-        <span class="keyword">if</span> (n == anotherString.value.length) {
-            char v1[] = value;
-            char v2[] = anotherString.value;
-            int i = 0;
-            <span class="keyword">while</span> (n-- != 0) {
-                <span class="keyword">if</span> (v1[i] != v2[i])
-                <span class="built_in">return</span> <span class="literal">false</span>;
-                i++;
-            }
-        <span class="built_in">return</span> <span class="literal">true</span>;
-        }
-    }
-    <span class="built_in">return</span> <span class="literal">false</span>;
-}
-</code></pre>
-<p>所以看源代码就会发现了。<br>首先做的是比较引用，引用的如果是同一个对象，直接返回<strong>true</strong>。<br>做完<strong>return</strong>就结束了。<br>如果引用不是同一个地址，就往下走，判断是否是<strong>String</strong>的一个实例。同样，不是的话直接返回。<br>是的话，拿字符串的长度做循环的控制变量，做循环。此处的value在源代码里面来看，应该就是<strong>String</strong>的混：字符数组。<br>详细可以查看原文<a href="http://www.cnblogs.com/zhxhdean/archive/2011/03/25/1995431.html" target="_blank" rel="external">链接</a></p>
+<h2 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h2><p><strong>1、不管有没有出现异常，finally块中代码都会执行；<br>2、当try和catch中有return时，finally仍然会执行；<br>3、finally是在return后面的表达式运算后执行的（此时并没有返回运算后的值，而是先把要返回的值保存起来，管finally中的代码怎么样，返回的值都不会改变，任然是之前保存的值），所以函数返回值是在finally执行前确定的；<br>4、finally中最好不要包含return，否则程序会提前退出，返回值不是try或catch中保存的返回值。</strong></p>
+<h2 id="举例："><a href="#举例：" class="headerlink" title="举例："></a>举例：</h2><p><strong>情况1:</strong>    try{ } catch(){ }finally{ } return;<br>        显然程序按顺序执行。<br><strong>情况2:</strong>    try{ return; }catch(){} finally{} return;<br>        程序执行try块中return之前（包括return语句中的表达式运算）代码；<br>        再执行finally块，最后执行try中return;<br>        finally块之后的语句return，因为程序在try中已经return所以不再执行。<br><strong>情况3:</strong>    try{ } catch(){return;} finally{} return;<br>        程序先执行try，如果遇到异常执行catch块，<br>        有异常：则执行catch中return之前（包括return语句中的表达式运算）代码，再执行finally语句中全部代码，<br>        最后执行catch块中return. finally之后也就是4处的代码不再执行。<br>        无异常：执行完try再finally再return.<br><strong>情况4:</strong>    try{ return; }catch(){} finally{return;}<br>        程序执行try块中return之前（包括return语句中的表达式运算）代码；<br>        再执行finally块，因为finally块中有return所以提前退出。<br><strong>情况5:</strong>    try{} catch(){return;}finally{return;}<br>        程序执行catch块中return之前（包括return语句中的表达式运算）代码；<br>        再执行finally块，因为finally块中有return所以提前退出。<br><strong>情况6:</strong>    try{ return;}catch(){return;} finally{return;}<br>        程序执行try块中return之前（包括return语句中的表达式运算）代码；<br>        有异常：执行catch块中return之前（包括return语句中的表达式运算）代码；<br>                  则再执行finally块，因为finally块中有return所以提前退出。<br>        无异常：则再执行finally块，因为finally块中有return所以提前退出。</p>
+<h2 id="最终结论："><a href="#最终结论：" class="headerlink" title="最终结论："></a>最终结论：</h2><p><strong>任何执行try或者catch中的return语句之前，都会先执行finally语句，如果finally存在的话。如果finally中有return语句，那么程序就return了，所以finally中的return是一定会被return的，编译器把finally中的return实现为一个warning。</strong></p>
+<p>详细情况可以查看<a href="http://blog.csdn.net/chengzhezhijian/article/details/17264531" target="_blank" rel="external">原文</a></p>
 
       
     </div>
@@ -446,17 +439,13 @@ System.out.println(c.equals(d));
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/19/Test1/" rel="next" title="Test1">
-                <i class="fa fa-chevron-left"></i> Test1
+              <a href="/2016/09/19/==和equals的区别/" rel="next" title="==和equals的区别">
+                <i class="fa fa-chevron-left"></i> ==和equals的区别
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/" rel="prev" title="关于JAVA的try catch finally的return返回值问题">
-                关于JAVA的try catch finally的return返回值问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -488,8 +477,8 @@ System.out.println(c.equals(d));
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/19/==和equals的区别/"
-           data-title="==和equals的区别" data-url="http://yoursite.com/2016/09/19/==和equals的区别/">
+      <div class="ds-thread" data-thread-key="2016/09/28/关于JAVA的try-catch-finally的return返回值问题/"
+           data-title="关于JAVA的try catch finally的return返回值问题" data-url="http://yoursite.com/2016/09/28/关于JAVA的try-catch-finally的return返回值问题/">
       </div>
     
   </div>
@@ -618,7 +607,7 @@ System.out.println(c.equals(d));
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#先来说说-和equals的区别"><span class="nav-number">1.</span> <span class="nav-text">先来说说==和equals的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-java中的数据类型，可分为两类："><span class="nav-number">1.1.</span> <span class="nav-text">1.java中的数据类型，可分为两类：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-再稍微改动一下程序，会有更奇怪的发现："><span class="nav-number">1.2.</span> <span class="nav-text">2.再稍微改动一下程序，会有更奇怪的发现：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-字符串缓冲池"><span class="nav-number">1.3.</span> <span class="nav-text">3. 字符串缓冲池</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-再次更改程序："><span class="nav-number">1.4.</span> <span class="nav-text">4.再次更改程序：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-特殊情况："><span class="nav-number">1.5.</span> <span class="nav-text">5.特殊情况：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的"><span class="nav-number">1.6.</span> <span class="nav-text">6.贴一段JDK当中，String里重写了Object的equals方法的源代码，更利于理解是怎么重写equlas方法的</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#通过查阅资料后明白了这个疑问："><span class="nav-number">1.</span> <span class="nav-text">通过查阅资料后明白了这个疑问：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#所以使用try、catch、finally语句块中需要注意的是"><span class="nav-number">2.</span> <span class="nav-text">所以使用try、catch、finally语句块中需要注意的是</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论："><span class="nav-number">3.</span> <span class="nav-text">结论：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#举例："><span class="nav-number">4.</span> <span class="nav-text">举例：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最终结论："><span class="nav-number">5.</span> <span class="nav-text">最终结论：</span></a></li></ol></div>
             
           </div>
         </section>
