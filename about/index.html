@@ -84,16 +84,49 @@
 
 
 
-<meta name="description" content="关于页面测试成功">
+<meta name="description" content="about
+
+body{
+background-color: #f5f7f9;
+}
+body.theme-dark .cbp_tmtimeline::before {
+background: RGBA(255, 255, 255, 0.06);
+}
+ul.cbp_tmtimeline {
+padding:0;
+}   
+div class.cdp_tmlabel &amp;gt; li .cbp_tmla">
 <meta property="og:type" content="website">
 <meta property="og:title" content="浮言">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="浮言">
-<meta property="og:description" content="关于页面测试成功">
-<meta property="og:updated_time" content="2016-09-19T04:35:39.948Z">
+<meta property="og:description" content="about
+
+body{
+background-color: #f5f7f9;
+}
+body.theme-dark .cbp_tmtimeline::before {
+background: RGBA(255, 255, 255, 0.06);
+}
+ul.cbp_tmtimeline {
+padding:0;
+}   
+div class.cdp_tmlabel &amp;gt; li .cbp_tmla">
+<meta property="og:updated_time" content="2016-10-07T04:58:59.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浮言">
-<meta name="twitter:description" content="关于页面测试成功">
+<meta name="twitter:description" content="about
+
+body{
+background-color: #f5f7f9;
+}
+body.theme-dark .cbp_tmtimeline::before {
+background: RGBA(255, 255, 255, 0.06);
+}
+ul.cbp_tmtimeline {
+padding:0;
+}   
+div class.cdp_tmlabel &amp;gt; li .cbp_tmla">
 
 
 
@@ -254,9 +287,270 @@
   <div id="posts" class="posts-expand">
     
     
-      <hr>
-<p>关于页面测试成功</p>
+      <html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>about</title>
+<style type="text/css">
+body{
+background-color: #f5f7f9;
+}
+body.theme-dark .cbp_tmtimeline::before {
+background: RGBA(255, 255, 255, 0.06);
+}
+ul.cbp_tmtimeline {
+padding:0;
+}   
+div class.cdp_tmlabel > li .cbp_tmlabel {
+margin-bottom:0;
+} 
+.cbp_tmtimeline {
+margin: 30px 0 0 0;
+padding: 0;
+list-style: none;
+position: relative;
+} 
+/* The line */
+.cbp_tmtimeline:before {
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+width: 4px;
+background: RGBA(0, 0, 0, 0.04);
+left: 80px;
+margin-left: 10px;
+}
 
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+display: block;
+/*  width: 29%;  */
+/*  padding-right: 110px; */
+max-width:70px;
+position: absolute;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+display: block;
+text-align: right;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+font-size: 0.9em;
+color: #bdd0db;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+font-size: 1.2em;
+color: #9BCD9B;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+color: RGBA(255, 125, 73, 0.75);
+}
+div.cbp_tmlabel > p {
+margin-bottom:0;
+}
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+margin: 0 0 45px 120px;
+background: #9BCD9B;
+color: #2e2a2a;
+padding: 1.5em;
+/* font-size: 1.2em; */
+font-weight: 300;
+line-height: 1.4;
+position: relative;
+border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+cursor:pointer;
+}
+.cbp_tmlabel:hover {
+    /* transform:scale(1.05); */
+    transform: translateY(-3px);
+    z-index: 1;
+    -webkit-box-shadow:0 15px 32px rgba(0,0,0,0.15) !important
+}
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+background: RGBA(255, 125, 73, 0.75);
+}
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-right-color: #9BCD9B;
+border-width: 10px;
+top: 4px;
+}
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+border-right-color: RGBA(255, 125, 73, 0.75);
+}
+/* Media  */
+@media screen and (max-width: 65.375em) {
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 47.2em) {
+.cbp_tmtimeline:before {
+    display: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #9BCD9B;
+    top: -20px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: RGBA(255, 125, 73, 0.75);
+}
+
+.cbp_tmtimeline > li .cbp_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+}   
+}
+.progress_bar .pro-bar {
+            background: hsl(0, 0%, 97%);
+            box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+            height:4px;
+            margin-bottom: 12px;
+            margin-top: 50px;
+            position: relative;
+        }
+.progress_bar .progress_bar_title{
+            color: rgba(32, 132, 118, 0.68);
+            font-size: 15px;
+            font-weight: 300;
+            position: relative;
+            top: -34px;
+            z-index: 1;
+        }
+.progress_bar .progress_number{
+            float: right;
+            margin-top: -34px;
+        }
+.progress_bar .progress-bar-inner {
+            background-color: hsl(0, 0%, 88%);
+            display: block;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 1s linear 0s;
+            animation: animate-positive 2s;
+        }
+.progress_bar .progress-bar-inner:before {
+            content: "";
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            right: 1px;
+            top: 0;
+            z-index: 1;
+        }
+.progress_bar .progress-bar-inner:after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-color: inherit;
+            border-radius: 50%;
+            position: absolute;
+            right: -4px;
+            top: -5px;
+        }
+@-webkit-keyframes animate-positive{
+            0% { width: 0%; }
+        }
+@keyframes animate-positive{
+            0% { width: 0%; }
+        }
+	</style>
+</head>
+<body>
+<div style="width: 600px;margin: auto;">
+<ul class="cbp_tmtimeline">
+<li> <time class="cbp_tmtime"> <span>简介</span></time> 
+<div class="cbp_tmlabel"> 
+<p>欢迎来到浮言，我是花生<br>一只正在学习编程的大学狗，雄性，比较宅，喜欢宅着不动学习各种技术。<br>兴趣是喜欢看动漫，喜欢看一些哲学方面的书籍，感觉思想可以不成熟，但是思维一定要开阔。然后就是喜欢旅游，看别人的生活方式，看其他地方的文化底蕴，体会不同生活的差异性思想的多样性，开阔眼界开阔思维。当然，最热爱的还是敲代码学习各种新的技术，很有满足感和成就感。</p> 
+</div> </li> 
+<li> <time class="cbp_tmtime"> <span>技能</span></time> 
+<div class="cbp_tmlabel"> 
+<p>熟悉C,C++,python,php;<br>会用PS,AI,PR,AE等做一些视频剪辑 logo设计 字体设计 人像处理等设计功能;<br>熟练html,css,javascript;<br>掌握mysql,oracle,java;<br>大学这几年从UI设计到HTML静态页面制作再到JSP动态网页功能的实现,最后决定选择java在后端的道路上越走越远。</p> 
+</div> </li> 
+<li> <time class="cbp_tmtime"> <span>计划</span></time> 
+<div class="cbp_tmlabel"> 
+<p><div class="progress_bar">
+<div class="pro-bar">
+<small class="progress_bar_title" style="color: #FF4040;">
+英语四级
+<span class="progress_number" style="color: #FF4040;">50%</span>
+</small>
+<span class="progress-bar-inner" style="background-color: #FF4040; width: 51%;" data-value="100" data-percentage-value="100"></span>
+</div>
+<div class="pro-bar">
+<small class="progress_bar_title" style="color: #B452CD;">
+学习Ajax
+<span class="progress_number" style="color: #B452CD;">10%</span>
+</small>
+<span class="progress-bar-inner" style="background-color: #B452CD; width: 10%;" data-value="100" data-percentage-value="100"></span>
+</div>
+<div class="pro-bar">
+<small class="progress_bar_title" style="color: #556B2F;">
+学习JQuery
+<span class="progress_number" style="color: #556B2F;">20%</span>
+</small>
+<span class="progress-bar-inner" style="background-color: #556B2F; width: 21%;" data-value="100" data-percentage-value="100"></span>
+</div>
+<div class="pro-bar">
+<small class="progress_bar_title" style="color: #27408B;">
+学习SSH框架
+<span class="progress_number" style="color: #27408B;">30 %</span>
+</small>
+<span class="progress-bar-inner" style="background-color: #27408B; width: 31%;" data-value="100" data-percentage-value="100"></span>
+</div>
+</div></p> 
+</div> </li> 
+</ul>
+</div>
+</body>
+</html>
     
   </div>
 
@@ -350,15 +644,6 @@
                     <i class="fa fa-fw fa-weibo"></i>
                   
                   Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://segmentfault.com/u/huas" target="_blank" title="Segmentfault">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Segmentfault
                 </a>
               </span>
             
